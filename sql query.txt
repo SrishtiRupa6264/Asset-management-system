@@ -1,0 +1,48 @@
+
+CREATING ASSET TABLE :-
+
+CREATE TABLE `project`.`asset` (`SNo` VARCHAR(40) NOT NULL , `Brand` VARCHAR(40) NOT NULL , `ProcurementDate` DATE NOT NULL , `DeliveryDate` DATE NOT NULL , `ItemType` VARCHAR(40) NOT NULL , `SupplierDetails` VARCHAR(40) NOT NULL , `CallLogDetails` VARCHAR(40) NOT NULL , `ContactOrder` VARCHAR(40) NOT NULL , `WarrentyPeriod` VARCHAR(40) NOT NULL , `AssetCode` VARCHAR(40) NOT NULL , `BCNo` VARCHAR(40) NOT NULL , `FileNo` VARCHAR(40) NOT NULL , `Financialyser` VARCHAR(40) NOT NULL , `Amount` VARCHAR(40) NOT NULL , `Quantity` VARCHAR(40) NOT NULL , `AreaAllocation` VARCHAR(40) NOT NULL ) ENGINE = InnoDB;
+
+
+
+
+CREATING ASSETMASTER TABLE :-
+
+CREATE TABLE `project`.`assetmaster` (`SNo` VARCHAR(40) NOT NULL , `UniqueCode` VARCHAR(40) NOT NULL , `Status` VARCHAR(40) NOT NULL , `IssuedDept` VARCHAR(40) NOT NULL , `IssuerName` VARCHAR(40) NOT NULL , `ReceiverName` VARCHAR(40) NOT NULL , `AdditionalFlag` VARCHAR(10) NOT NULL , `IssueDate` DATE NOT NULL , `TransactionId` VARCHAR(40) NOT NULL , `AssetTransaction` VARCHAR(40) NOT NULL ) ENGINE = InnoDB;
+
+
+
+CREATING ASSETDETAILS TABLE :-
+
+CREATE TABLE `project`.`assetdetails` (`PCDetails` VARCHAR(40) NOT NULL , `UniqueCodePC` VARCHAR(40) NOT NULL , `SNoMonitor` VARCHAR(40) NOT NULL , `SNoKeyboard` VARCHAR(40) NOT NULL , `SNoMouse` VARCHAR(40) NOT NULL , `PrinterDetails` VARCHAR(40) NOT NULL , `UniqueCodePrinter` VARCHAR(40) NOT NULL , `SNoPrinter` VARCHAR(40) NOT NULL ) ENGINE = InnoDB;
+
+
+
+CREATING LOGINDETAIL TABLE :-
+CREATE TABLE `project`.`logindetails` (`user` VARCHAR(40) NOT NULL , `password` VARCHAR(40) NOT NULL ) ENGINE = InnoDB;
+
+
+
+INSERTING THE ROW IN LOGINDETAIL TABLE :-
+INSERT INTO `logindetails` (`user`, `password`) VALUES ('srishti ', '2106264');
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
